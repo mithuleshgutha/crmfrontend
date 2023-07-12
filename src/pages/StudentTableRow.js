@@ -4,7 +4,7 @@ import Axios from "axios";
 function StudentTableRow(props)
 {
     const handleDelete = () => {
-        const url = "http://localhost:4500/crm/delete-invoice/" + _id;
+        const url = "https://crmbackend-fgt7.onrender.com/crm/delete-invoice/" + _id;
         Axios.delete(url)
         .then((res)=>{
             if(res.status === 200)
